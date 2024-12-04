@@ -1,6 +1,15 @@
-# Create T3 App
+# Try T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+
+Deployed to https://try-t3-app.linwise.com/
+
+Followed the [T3 Stack](https://create.t3.gg/) guide and added discord login.
+
+## Misc
+
+- Configure `NEXTAUTH_URL=https://try-t3-app.linwise.com/` in `.env` file to make sure the correct callback URL is used.
+- Add a redirect url in discord: `https://try-t3-app.linwise.com/api/auth/callback/discord`.
 
 ## What's next? How do I make an app with this?
 
