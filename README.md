@@ -6,10 +6,27 @@ Deployed to https://try-t3-app.linwise.com/
 
 Followed the [T3 Stack](https://create.t3.gg/) guide and added discord login.
 
-## Misc
+## Notes
 
-- Configure `NEXTAUTH_URL=https://try-t3-app.linwise.com/` in `.env` file to make sure the correct callback URL is used.
-- Add a redirect url in discord: `https://try-t3-app.linwise.com/api/auth/callback/discord`.
+- Added `NEXTAUTH_URL` to make sure the correct callback URL is used.
+- Added `AUTH_TRUST_HOST` according to [auth.js docs](https://authjs.dev/getting-started/deployment#auth_trust_host).
+
+  Compared to the original project, I have added the following in `.env` file:
+
+  ```ini
+  NEXTAUTH_URL=http://localhost:3000 # local development
+  # NEXTAUTH_URL=https://try-t3-app.linwise.com/ # production
+
+  AUTH_TRUST_HOST="localhost" # local development
+  # AUTH_TRUST_HOST="try-t3-app.linwise.com" # production
+  ```
+
+- Added these redirect urls in discord developer portal:
+
+  ```plain
+  `http://localhost/api/auth/callback/discord`
+  `https://try-t3-app.linwise.com/api/auth/callback/discord`
+  ```
 
 ## What's next? How do I make an app with this?
 
