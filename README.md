@@ -24,9 +24,14 @@ Followed the [T3 Stack](https://create.t3.gg/) guide and added discord login.
 - Added these redirect urls in discord developer portal:
 
   ```plain
-  `http://localhost/api/auth/callback/discord`
-  `https://try-t3-app.linwise.com/api/auth/callback/discord`
+  http://localhost/api/auth/callback/discord
+  https://try-t3-app.linwise.com/api/auth/callback/discord
   ```
+
+## Links
+
+- https://create.t3.gg/en/usage/first-steps
+- https://create.t3.gg/en/introduction
 
 ## What's next? How do I make an app with this?
 
